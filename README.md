@@ -9,34 +9,34 @@ X Education has appointed you to help them select the most promising leads, i.e.
 
 # Methodology:
 1. Data Cleaning:
-o Addressed null values and irrelevant entries. reclassified
+ Addressed null values and irrelevant entries. reclassified
 geographical data into 'India', 'foreigner', and 'unknown'.
-o Null values were categorized as 'unknown' before being removed
+ Null values were categorized as 'unknown' before being removed
 for dummy variable creation.
 2. Exploratory Data Analysis (EDA):
-o Conducted initial EDA to assess data quality. Identified irrelevant
+ Conducted initial EDA to assess data quality. Identified irrelevant
 categories in categorical variables. Confirmed no significant
 outliers in numeric data.
 3. Dummy Variables Creation:
-o Created dummy variables for categorical data. Removed dummies
+ Created dummy variables for categorical data. Removed dummies
 with 'unknown' entries.
 4. Train-Test Split:
-o Split the data into 72% for training and 28% for testing.
+ Split the data into 72% for training and 28% for testing.
 5. Model Building:
-o Used Recursive Feature Elimination (RFE) to select the top 15
+ Used Recursive Feature Elimination (RFE) to select the top 15
 relevant variables.
-o Manually removed variables with high Variance Inflation Factor
+ Manually removed variables with high Variance Inflation Factor
 (VIF > 5) and non-significant p-values (p > 0.05).
 6. Model Evaluation:
-o Constructed a confusion matrix. Determined the optimum cut-off
+ Constructed a confusion matrix. Determined the optimum cut-off
 value using the ROC curve. Achieved an accuracy, sensitivity, and
 specificity of approximately 80%.
 7. Prediction:
-o Applied the model to the test data with an optimum cut-off of 0.35,
+ Applied the model to the test data with an optimum cut-off of 0.35,
 maintaining an accuracy of 77% , sensitivity of 86%, and specificity
 of 72%.
 8. Precision-Recall Analysis:
-o Verified results using precision-recall analysis. Identified an optimal
+ Verified results using precision-recall analysis. Identified an optimal
 cut-off of 0.41, with precision at 76% and recall at 78%.
 
 
